@@ -806,10 +806,10 @@ margin-top: 300px; /* MOVE DOWN */
     border: 1px solid transparent;
 }
 
-.project-card:hover {
-    transform: translateY(-7px);
-    box-shadow: var(--shadow-hover);
-    border-color: rgba(0, 242, 255, 0.3);
+.project-card {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+}
 }
 
 .project-top {
@@ -1046,3 +1046,4 @@ margin-top: 300px; /* MOVE DOWN */
   color: var(--text-main) !important;
   display: block !important;
 }
+
