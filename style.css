@@ -712,7 +712,8 @@ margin-top: 300px; /* MOVE DOWN */
 
 .experience-card {
   max-width: 600px;
-  margin: 0 auto;              /* CENTER the card */
+  margin: 0 auto;/* CENTER the card */
+  background: #f1f5f9;
   background: var(--bg-surface); /* Same as projects */
   border-radius: 10px;
   padding: 30px;
@@ -1047,6 +1048,7 @@ margin-top: 300px; /* MOVE DOWN */
   color: var(--text-main) !important;
   display: block !important;
 }
+
 
 
 
