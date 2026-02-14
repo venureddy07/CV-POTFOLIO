@@ -809,7 +809,7 @@ margin-top: 300px; /* MOVE DOWN */
 .project-card {
     background: rgba(255,255,255,0.7);
     backdrop-filter: blur(10px);
-    background: #f1f5f9;
+    
 }
 }
 
@@ -1047,6 +1047,7 @@ margin-top: 300px; /* MOVE DOWN */
   color: var(--text-main) !important;
   display: block !important;
 }
+
 
 
 
