@@ -799,7 +799,7 @@ margin-top: 300px; /* MOVE DOWN */
 }
 
 .project-card {
-    background: var(--bg-surface);
+    background: #f1f5f9;
     border-radius: 10px;
     padding: 30px;
     transition: var(--transition);
@@ -1046,4 +1046,5 @@ margin-top: 300px; /* MOVE DOWN */
   color: var(--text-main) !important;
   display: block !important;
 }
+
 
