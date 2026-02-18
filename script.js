@@ -137,24 +137,7 @@ function scrollToTop() {
   });
 }
 
-// Certificate Popup
 
-function openCertModal() {
-  document.getElementById("certModal").style.display = "block";
-}
-
-function closeCertModal() {
-  document.getElementById("certModal").style.display = "none";
-}
-
-// Close when clicking outside
-window.addEventListener("click", function (e) {
-  const modal = document.getElementById("certModal");
-
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
-});
 
 function openCertModal(platform) {
   const modal = document.getElementById("certModal");
@@ -221,3 +204,4 @@ function openCertModal(platform) {
 function closeCertModal() {
   document.getElementById("certModal").style.display = "none";
 }
+
