@@ -158,7 +158,7 @@ function openCertModal(platform) {
       "Introduction to Data Science",
       "Statistical Inference using Python"
     ];
-    fileLink = "assets/infosys1.pdf";
+    fileLink = "assets/ChatGPT-4 Prompt Engineering ChatGPT, Generative AI & LLM.pdf";
   }
 
   if (platform === "udemy") {
@@ -238,6 +238,7 @@ btn.style.color = "#ffffff";   // 🔥 makes text visible
 function closeCertModal() {
   document.getElementById("certModal").style.display = "none";
 }
+
 
 
 
