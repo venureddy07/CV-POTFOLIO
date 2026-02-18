@@ -207,9 +207,10 @@
 
       <p>Various specialized courses by Infosys.</p>
 
-      <a href="assets/infosys1.pdf" target="_blank" class="cert-btn">
-        View Certificate
-      </a>
+      <a href="#" class="cert-btn" onclick="openCertModal('infosys')">
+  View Certificates
+</a>
+
 
     </div>
 
@@ -220,11 +221,12 @@
 
       <h4>NPTEL Certification</h4>
 
-      <p>Successful completion of Cloud Computing by NPTEL course.</p>
+      <p>Successful completion of Cloud Computing by NPTEL.</p>
 
-      <a href="assets/nptel.pdf" target="_blank" class="cert-btn">
-        View Certificate
-      </a>
+      <a href="#" class="cert-btn" onclick="openCertModal('nptel')">
+  View Certificates
+</a>
+
 
     </div>
 
@@ -237,9 +239,10 @@
 
       <p>Various courses including Data Science modules.</p>
 
-      <a href="assets/udemy.pdf" target="_blank" class="cert-btn">
-        View Certificate
-      </a>
+      <a href="#" class="cert-btn" onclick="openCertModal('udemy')">
+  View Certificates
+</a>
+
 
     </div>
 
@@ -250,11 +253,12 @@
 
       <h4>Coursera Certificates</h4>
 
-      <p>Data Science Modules</p>
+      <p>Various Data Science Courses by Coursera</p>
 
-      <a href="assets/coursera.pdf" target="_blank" class="cert-btn">
-        View Certificate
-      </a>
+      <a href="#" class="cert-btn" onclick="openCertModal('coursera')">
+  View Certificates
+</a>
+
 
     </div>
 
@@ -267,30 +271,25 @@
 			<!-- Certificate Modal -->
 
 <div id="certModal" class="cert-modal">
-
   <div class="cert-modal-content">
 
     <span class="close-btn" onclick="closeCertModal()">&times;</span>
 
-    <h3>My Certificates</h3>
+    <h3 id="modalTitle">My Certificates</h3>
 
-    <ul class="cert-list">
-      <li>Python Programming</li>
-      <li>Data Science Basics</li>
-      <li>Cloud Computing</li>
-      <li>AI Fundamentals</li>
+    <ul id="certList" class="cert-list">
     </ul>
 
-    <!-- Open Button -->
-    <a href="assets/infosys1.pdf"
+    <a id="openAllBtn"
+       href="#"
        target="_blank"
        class="btn btn-primary cert-open-btn">
-      Open Certificate
+      Open Certificates
     </a>
 
   </div>
-
 </div>
+
 
 </div>
 			
@@ -456,6 +455,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
