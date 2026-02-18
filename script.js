@@ -211,8 +211,16 @@ btn.style.color = "#ffffff";   // 🔥 makes text visible
 
   // Individual links (change these to your actual files)
   if (platform === "infosys") {
-    btn.href = `assets/infosys${index + 1}.pdf`;
-  }
+  const infosysFiles = [
+    "assets/ChatGPT-4 Prompt Engineering ChatGPT, Generative AI & LLM.pdf",
+    "assets/Computational Theory Language Principle & Finite Automata Theory.pdf",
+    "assets/Introduction to Data Science.pdf",
+    "assets/Statistical Inference using Python.pdf"
+  ];
+
+  btn.href = infosysFiles[index];
+}
+
 
   if (platform === "udemy") {
     btn.href = `assets/udemy${index + 1}.pdf`;
@@ -238,6 +246,7 @@ btn.style.color = "#ffffff";   // 🔥 makes text visible
 function closeCertModal() {
   document.getElementById("certModal").style.display = "none";
 }
+
 
 
 
