@@ -153,7 +153,7 @@ function openCertModal(platform) {
   if (platform === "infosys") {
     modalTitle.innerText = "Infosys Certificates";
     certificates = [
-      "Python Programming",
+      "ChatGPT-4 Prompt Engineering ChatGPT, Generative AI & LLM",
       "Java Programming",
       "Web Development",
       "Data Science"
@@ -230,4 +230,5 @@ function openCertModal(platform) {
   li.appendChild(btn);
   certList.appendChild(li);
 });
+
 
