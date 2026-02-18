@@ -230,5 +230,11 @@ function openCertModal(platform) {
   li.appendChild(btn);
   certList.appendChild(li);
 });
+  modal.style.display = "block";
+}
+
+function closeCertModal() {
+  document.getElementById("certModal").style.display = "none";
+}
 
 
