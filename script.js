@@ -247,6 +247,8 @@ function closeCertModal() {
   font-size: 12px;
   cursor: pointer;
 }
+const themeToggle = document.getElementById('theme-toggle');
+
 
 
 
