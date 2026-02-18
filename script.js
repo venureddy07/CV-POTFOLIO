@@ -155,3 +155,69 @@ window.addEventListener("click", function (e) {
     modal.style.display = "none";
   }
 });
+
+function openCertModal(platform) {
+  const modal = document.getElementById("certModal");
+  const certList = document.getElementById("certList");
+  const modalTitle = document.getElementById("modalTitle");
+  const openBtn = document.getElementById("openAllBtn");
+
+  certList.innerHTML = ""; // clear previous list
+
+  let certificates = [];
+  let fileLink = "";
+
+  if (platform === "infosys") {
+    modalTitle.innerText = "Infosys Certificates";
+    certificates = [
+      "Python Programming",
+      "Java Programming",
+      "Web Development",
+      "Data Science"
+    ];
+    fileLink = "assets/infosys1.pdf";
+  }
+
+  if (platform === "udemy") {
+    modalTitle.innerText = "Udemy Certificates";
+    certificates = [
+      "Machine Learning",
+      "Data Analysis",
+      "Power BI Course"
+    ];
+    fileLink = "assets/udemy.pdf";
+  }
+
+  if (platform === "coursera") {
+    modalTitle.innerText = "Coursera Certificates";
+    certificates = [
+      "Google Data Analytics",
+      "AI Fundamentals"
+    ];
+    fileLink = "assets/coursera.pdf";
+  }
+
+  if (platform === "nptel") {
+    modalTitle.innerText = "NPTEL Certificate";
+    certificates = [
+      "Cloud Computing"
+    ];
+    fileLink = "assets/nptel.pdf";
+  }
+
+  // Add certificate names to list
+  certificates.forEach(cert => {
+    const li = document.createElement("li");
+    li.textContent = cert;
+    certList.appendChild(li);
+  });
+
+  // Set open button link
+  openBtn.href = fileLink;
+
+  modal.style.display = "block";
+}
+
+function closeCertModal() {
+  document.getElementById("certModal").style.display = "none";
+}
