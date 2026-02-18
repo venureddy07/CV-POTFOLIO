@@ -203,7 +203,8 @@ function openCertModal(platform) {
   // Open button for each certificate
   const btn = document.createElement("a");
   btn.textContent = "Open";
-  btn.className = "btn btn-primary";
+ btn.className = "btn btn-primary";
+btn.style.color = "#ffffff";   // 🔥 makes text visible
   btn.style.padding = "5px 10px";
   btn.style.fontSize = "12px";
 
@@ -236,5 +237,6 @@ function openCertModal(platform) {
 function closeCertModal() {
   document.getElementById("certModal").style.display = "none";
 }
+
 
 
