@@ -189,19 +189,45 @@ function openCertModal(platform) {
   }
 
   // Add certificate names to list
-  certificates.forEach(cert => {
-    const li = document.createElement("li");
-    li.textContent = cert;
-    certList.appendChild(li);
-  });
+ certificates.forEach((cert, index) => {
+  const li = document.createElement("li");
+  li.style.display = "flex";
+  li.style.justifyContent = "space-between";
+  li.style.alignItems = "center";
+  li.style.marginBottom = "10px";
 
-  // Set open button link
-  openBtn.href = fileLink;
+  // Certificate name
+  const span = document.createElement("span");
+  span.textContent = cert;
 
-  modal.style.display = "block";
-}
+  // Open button for each certificate
+  const btn = document.createElement("a");
+  btn.textContent = "Open";
+  btn.className = "btn btn-primary";
+  btn.style.padding = "5px 10px";
+  btn.style.fontSize = "12px";
 
-function closeCertModal() {
-  document.getElementById("certModal").style.display = "none";
-}
+  // Individual links (change these to your actual files)
+  if (platform === "infosys") {
+    btn.href = `assets/infosys${index + 1}.pdf`;
+  }
+
+  if (platform === "udemy") {
+    btn.href = `assets/udemy${index + 1}.pdf`;
+  }
+
+  if (platform === "coursera") {
+    btn.href = `assets/coursera${index + 1}.pdf`;
+  }
+
+  if (platform === "nptel") {
+    btn.href = "assets/nptel.pdf";
+  }
+
+  btn.target = "_blank";
+
+  li.appendChild(span);
+  li.appendChild(btn);
+  certList.appendChild(li);
+});
 
