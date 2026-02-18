@@ -154,9 +154,9 @@ function openCertModal(platform) {
     modalTitle.innerText = "Infosys Certificates";
     certificates = [
       "ChatGPT-4 Prompt Engineering ChatGPT, Generative AI & LLM",
-      "Java Programming",
-      "Web Development",
-      "Data Science"
+      "Computational Theory Language Principle & Finite Automata Theory",
+      "Introduction to Data Science",
+      "Statistical Inference using Python"
     ];
     fileLink = "assets/infosys1.pdf";
   }
@@ -164,9 +164,10 @@ function openCertModal(platform) {
   if (platform === "udemy") {
     modalTitle.innerText = "Udemy Certificates";
     certificates = [
-      "Machine Learning",
-      "Data Analysis",
-      "Power BI Course"
+      "Master Generative AI ",
+      "ChatGPT Made Easy: Al Essentials for Beginners",
+      "Build Generative Al Apps and Solutions with No-Code Tools"
+        
     ];
     fileLink = "assets/udemy.pdf";
   }
@@ -174,8 +175,8 @@ function openCertModal(platform) {
   if (platform === "coursera") {
     modalTitle.innerText = "Coursera Certificates";
     certificates = [
-      "Google Data Analytics",
-      "AI Fundamentals"
+      "Introduction to Hardware and Operating Systems",
+      "Computer Communications"
     ];
     fileLink = "assets/coursera.pdf";
   }
@@ -237,6 +238,7 @@ btn.style.color = "#ffffff";   // 🔥 makes text visible
 function closeCertModal() {
   document.getElementById("certModal").style.display = "none";
 }
+
 
 
 
