@@ -18,8 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    themeToggle.addEventListener('click', () => {
-  const isLight = body.getAttribute('data-theme') === 'light';
+   themeToggle.addEventListener('click', () => {
+  console.log("CLICK WORKING");
+});
 
   if (isLight) {
     body.removeAttribute('data-theme'); // ✅ FIX
