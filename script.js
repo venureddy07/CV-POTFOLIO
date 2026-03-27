@@ -9,8 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const currentTheme = localStorage.getItem('theme');
 
-    if (currentTheme) {
-      body.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'light') {
+  body.setAttribute('data-theme', 'light');
+}
       if (currentTheme === 'light') {
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
@@ -18,22 +19,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     themeToggle.addEventListener('click', () => {
-      const isLight = body.getAttribute('data-theme') === 'light';
+  const isLight = body.getAttribute('data-theme') === 'light';
 
-      if (isLight) {
-        body.setAttribute('data-theme', 'dark');
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        body.setAttribute('data-theme', 'light');
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-        localStorage.setItem('theme', 'light');
-      }
-    });
+  if (isLight) {
+    body.removeAttribute('data-theme'); // ✅ FIX
+    themeIcon.classList.remove('fa-sun');
+    themeIcon.classList.add('fa-moon');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    body.setAttribute('data-theme', 'light');
+    themeIcon.classList.remove('fa-moon');
+    themeIcon.classList.add('fa-sun');
+    localStorage.setItem('theme', 'light');
   }
-
+});
+      
 
   // ================= MOBILE NAV =================
   const hamburger = document.getElementById('hamburger');
